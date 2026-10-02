@@ -1,16 +1,24 @@
-# React + Vite
+# 💻 Slutprojekt - Frontend (React Webbapp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är den webbaserade klienten för mitt fullstack-projekt. Applikationen är byggd med **React** och kommunicerar med mitt centrala C# API för att hantera användare, uppgifter och statistik.
 
-Currently, two official plugins are available:
+## 🚀 Teknisk Stack
+* **Bibliotek:** React
+* **Kommunikation:** Fetch API för anrop mot backend
+* **Funktioner:** Hanterar inloggning (med LocalStorage), datavisning och filuppladdning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Kom igång & Starta webbappen
 
-## React Compiler
+För att köra applikationen lokalt behöver du ha Node.js installerat på din dator.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Installation
+Öppna en terminal i projektets rotmapp och installera alla nödvändiga paket:
+`npm install`
 
-## Expanding the ESLint configuration
+### 2. Starta applikationen
+När installationen är klar, starta utvecklingsservern med kommandot:
+`npm run dev`
+*(Notering: Om projektet är byggt med Create React App, använd kommandot `npm start` istället).*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. API-krav
+För att webbappen ska fungera korrekt (inloggning, hämtning av uppgifter etc.) måste backend-API:et vara igång samtidigt på datorn. Webbappen gör sina anrop mot localhost.
